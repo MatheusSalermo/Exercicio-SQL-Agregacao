@@ -112,19 +112,19 @@ use bdExerc01
 		where tempoCargo = 1
 
 	-- Exercicio 35->
-	select count(codFunc) as 'Quantos funcionários tem idade > 20' from tbFunc
+	select count(codDadosFunc) as 'Quantos funcionários tem idade > 20' from tbDadosFunc
 		where idade > 20
 	
 	-- Exercicio 36->
-	select count(codFunc) as 'Quantos funcionários tem idade > 40' from tbFunc
+	select count(codDadosFunc) as 'Quantos funcionários tem idade > 40' from tbDadosFunc
 		where idade > 40
 
 	-- Exercicio 37->
-	select count(codFunc) as 'Quantos funcionários tem idade < 80' from tbFunc
+	select count(codDadosFunc) as 'Quantos funcionários tem idade < 80' from tbDadosFunc
 		where idade <80
 
 	-- Exercicio 38->
-	select count(codFunc) as 'Quantos funcionários tem idade < 200' from tbFunc
+	select count(codDadosFunc) as 'Quantos funcionários tem idade < 200' from tbDadosFunc
 		where idade <200
 
 	-- Exercicio 39->
@@ -133,7 +133,7 @@ use bdExerc01
 
 	-- Exercicio 39->
 	select count(codFunc) as 'Quantos são gerentes' from tbFunc
-		where cargo = 'gerente'
+		where cargo = 'Gerente de Recursos Humanos'
 
 	-- Exercicio 40->
 	select count(codFunc) as 'Quantos são analistas' from tbFunc
@@ -156,29 +156,29 @@ use bdExerc01
 		where cargo = 'gerentes'
 
 	-- Exercicio 45->
-	select count(codFuncionario) as 'Total de funcionários que nasceram em SP' from tbDadosFunc
+	select count(codDadosFunc) as 'Total de funcionários que nasceram em SP' from tbDadosFunc
 		where uf = 'SP'
 
 	-- Exercicio 46->
-	select count(codFuncionario) as 'Total de funcionários que nasceram na BA' from tbDadosFunc
+	select count(codDadosFunc) as 'Total de funcionários que nasceram na BA' from tbDadosFunc
 		where uf = 'BA'
 
 	-- Exercicio 47->
-	select count(codFuncionario) as 'Total de funcionários que nasceram no CE' from tbDadosFunc
+	select count(codDadosFunc) as 'Total de funcionários que nasceram no CE' from tbDadosFunc
 		where uf = 'CE'
 
 	-- Exercicio 48->
-	select count(codFuncionario) as 'Total de funcionários que nasceram no RJ' from tbDadosFunc
+	select count(codDadosFunc) as 'Total de funcionários que nasceram no RJ' from tbDadosFunc
 		where uf = 'RJ'
 
 	-- Exercicio 49->
-	select count(codFuncionario) as 'Total de funcionários sem contar os que nasceram em RJ' from tbDadosFunc
-		where uf <> 'RJ'
+	select count(codDadosFunc) as 'Total de funcionários sem contar os que nasceram em RJ' from tbDadosFunc
+		where  uf <> 'RJ'
 
 	-- Exercicio 50->
-	select count(codFuncionario) as 'Total de funcionários que são sindicalizados' from tbFunc
+	select count(codFunc) as 'Total de funcionários que são sindicalizados' from tbFunc
 		where sindicalizado = 'Sim'
 
 	-- Exercicio 51->
-	select count(codFuncionario) as 'Total de funcionários que são sindicalizados' from tbFunc
+	select count(codFunc) as 'Total de funcionários que não são sindicalizados' from tbFunc
 		where sindicalizado = 'Não'
